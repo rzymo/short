@@ -1,6 +1,6 @@
 # short
-simple problems, short pieces of code
+simple problems, short pieces of code:
 
-lastdigitpow: last digit of exponentiation - pow(base^exp)
+* lastdigitpow: last digit of exponentiation - pow(base^exp)
 
-pointers_swap: correct way to swap pointers
+* pointers_swap: correct way to swap pointers
