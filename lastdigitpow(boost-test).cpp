@@ -1,8 +1,3 @@
-/*
-// Last digit of exponentiation - pow(base^exp)
-// for example 13^19 -> 7   (1461920290375446110677)
-*/
-
 #define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE Hello
 #include <boost/test/unit_test.hpp>
