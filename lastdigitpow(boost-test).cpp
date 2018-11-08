@@ -19,9 +19,27 @@ int lastDigit(int base, int exp)
     }
 }
 
-BOOST_AUTO_TEST_CASE( testLastDigit )
-{
-    BOOST_CHECK( lastDigit( 13, 19 ) == 7 ); // ok
-    BOOST_CHECK( lastDigit(   2, 3 ) == 8 ); // ok
-    BOOST_CHECK( lastDigit(   2, 3 ) == 9 ); // error
-}
+BOOST_AUTO_TEST_SUITE(s1)
+    BOOST_AUTO_TEST_CASE(test1)
+    {
+        BOOST_CHECK( lastDigit( 13, 19 ) == 7 ); // ok
+    }
+    
+    BOOST_AUTO_TEST_CASE(test2)
+    {
+        BOOST_CHECK( lastDigit( 2, 3 ) == 8 ); // ok
+    }
+BOOST_AUTO_TEST_SUITE_END()
+
+
+BOOST_AUTO_TEST_SUITE(s2)
+    BOOST_AUTO_TEST_CASE(test3)
+    {
+        BOOST_CHECK( lastDigit( 2, 3 ) == 9 ); // error
+    }
+
+    BOOST_AUTO_TEST_CASE(test4)
+    {
+        BOOST_CHECK( lastDigit( 3, 3) == 2 ); // error
+    }
+BOOST_AUTO_TEST_SUITE_END()
